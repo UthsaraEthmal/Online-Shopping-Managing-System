@@ -1,8 +1,7 @@
 # Online-Shopping-Managing-System
-The Theatre class orchestrates the core functionality of the system. It facilitates ticket booking, cancellation, and management of available seats. Additionally, it provides options for displaying the seating area, saving seating information to a file, loading data from a file, and presenting ticket information. The class adopts a menu-driven approach, allowing users to select actions via numbered options.
-
-The Ticket class encapsulates the properties and behaviors of individual tickets. It records details such as the row, seat number, price, and the person who booked the ticket. This class also includes a method to print ticket information.
-
-Similarly, the Person class encapsulates details about individuals booking tickets, such as their name, surname, and email address.
-
-Overall, the system enables users to interactively book and cancel tickets, view available seats, and manage ticket-related information effectively. Its modular design fosters clarity and maintainability, making it relatively easy to extend or modify functionality as needed.
+Clothing and Electronics Classes: These classes extend the Product class and represent distinct types of products available for purchase. Clothing includes properties such as size and color, while Electronics includes properties like brand and warranty period. Both classes implement methods to display product information and are serializable for object storage.
+Main Class: Serving as the application's entry point, the Main class initializes the shopping management system and enters a loop to handle user interactions through a menu-based interface. It allows users to perform various actions like adding products, deleting products, and printing product lists.
+Product Class: An abstract class representing generic products, it includes common attributes like product ID, name, quantity, and price. Subclasses override abstract methods to display product information based on their specific type. The class is designed to be serializable for storage and retrieval of product data.
+ShoppingCart and ShoppingManager Interfaces: These interfaces define methods for managing shopping carts and products within the system. They provide functionalities such as adding products to the cart, deleting products, printing product lists, and displaying a menu for user interaction.
+User Class: This class models users of the shopping system, storing their usernames and passwords. It is serializable for saving and loading user data.
+Together, these components form the backbone of a shopping management system, enabling users to browse, add, and manage products within a virtual shopping environment
